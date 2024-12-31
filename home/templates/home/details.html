@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Details {% endblock title %}
+{% block bg %}skyblue{% endblock bg %}
+
+{% block content %}
+<a href="{% url "home:delete" post.id %}"><button type="button" class="btn btn-danger">Delete</button></a>
+<a href="{% url "home:update" post.id %}"><button type="button" class="btn btn-info">update</button></a>
+    <h1>{{post.id}}</h1>
+    <h3>{{post.title}}</h3>
+    <p>{{post.body}}</p>
+    <small>{{post.author}}</small>
+    <small>created - {{post.created}}</small><br>
+{% endblock content %}

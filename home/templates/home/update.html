@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %} Update {% endblock title %}
+{% block bg %}yellow{% endblock bg %}
+
+{% block content %}
+
+    <form action="" method="post" novalidate>
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="send">
+    </form>
+
+{% endblock content %}
