@@ -1,1 +1,1 @@
-This is crud base code in Django
+This is crud base code in Django (FBV)
